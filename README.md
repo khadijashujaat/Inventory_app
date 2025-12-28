@@ -54,11 +54,12 @@ The user can do various operations with inventory items like
 <img width="300" height="500" alt="search" src="https://github.com/user-attachments/assets/2ce7ecfe-a049-4b41-b39e-b2af75f2172a" />
 
 ### 3. Calculating Inventory Levels
-`Details of specific inventory item.`
+`How much of the inventory is filled`
+
 
 <img width="300" height="500" alt="level" src="https://github.com/user-attachments/assets/6762b724-6e5f-40c2-bd3c-97a19ae7f563" />
 
-` How much of the inventory is filled`
+`Details of specific inventory item.`
 
 <img width="300" height="500" alt="item_details" src="https://github.com/user-attachments/assets/56894ff3-7223-419b-885e-31ffca7b9f39" />
 
