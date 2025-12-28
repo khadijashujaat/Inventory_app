@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_n"
+        android:textAllCaps="true"
+        android:textColor="#141414"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signup_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="8dp"
+        android:hint="@string/Password"
+
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_confirm"
+        app:layout_constraintEnd_toEndOf="@+id/signup_confirm"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="@+id/signup_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="330dp"
+        android:layout_marginBottom="21dp"
+
+        android:drawablePadding="8dp"
+        android:hint="@string/email"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_password"
+        app:layout_constraintEnd_toEndOf="@+id/signup_password"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="@+id/signup_password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup_confirm"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="31dp"
+
+        android:drawablePadding="8dp"
+        android:hint="@string/ConfirmPass"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/signup"
+        android:textSize="18sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginRedirectText"
+        app:layout_constraintEnd_toEndOf="@+id/signup_confirm"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/signup_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/signup_confirm"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/loginRedirectText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="@string/redirecttext"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_button"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
